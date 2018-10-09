@@ -14,4 +14,9 @@
 </ul>
 </p>
 
+The Stack is as follows:
+
+* Database - MySql
+* Servers - Python (Flask)
+* Front-End - Java (Emulated)
 
