@@ -8,11 +8,22 @@ cnx = mysql.connector.connect(user='nativeuser',
                                 database='gp',
                                 auth_plugin='mysql_native_password')
 
-@app.route('/')
-def hello():
-    return 'Hello, World!'
+@app.route('/login')
+def login():
+    pass
+
+@app.route('/new_user')
+def new_user():
+    pass
+
+@app.route('/location_retrieve')
+def location():
+    pass
 
 
+@app.route('/location_pass')
+def location_pass():
+    pass
 
 
 app.run()
