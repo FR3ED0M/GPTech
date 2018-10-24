@@ -16,10 +16,12 @@ def login():
 def new_user():
     username = request.args.get('username')
     password = request.args.get('password')
-    
+    return 'SUCCESS'
 
 @app.route('/location_retrieve')
 def location():
+    x = request.args.get('longitude')
+    y = request.args.get('latitude')
     pass
 
 
@@ -27,8 +29,8 @@ def location():
 def location_pass():
     pass
 
-
-app.run()
+if __name__ == '__main__':
+    app.run()
 
 
 
