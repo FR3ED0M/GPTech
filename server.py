@@ -1,5 +1,5 @@
 import mysql.connector
-from flask import Flask
+from flask import Flask, request
 app = Flask(__name__)
 
 cnx = mysql.connector.connect(user='nativeuser', 
@@ -12,9 +12,11 @@ cnx = mysql.connector.connect(user='nativeuser',
 def login():
     pass
 
-@app.route('/new_user')
+@app.route('/new_user', methods = ['POST'])
 def new_user():
-    pass
+    username = request.args.get('username')
+    password = request.args.get('password')
+    
 
 @app.route('/location_retrieve')
 def location():
