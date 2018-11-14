@@ -8,9 +8,9 @@ cnx = mysql.connector.connect(user='nativeuser',
                                 database='gp',
                                 auth_plugin='mysql_native_password')
 
-@app.route('/login')
+@app.route('/', methods = ['GET'])
 def login():
-    pass
+    return 'Hello world'
 
 @app.route('/new_user', methods = ['POST'])
 def new_user():
@@ -22,7 +22,7 @@ def new_user():
 def location():
     x = request.args.get('longitude')
     y = request.args.get('latitude')
-    pass
+    
 
 
 @app.route('/location_pass')
