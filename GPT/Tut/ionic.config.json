@@ -1,0 +1,7 @@
+{
+  "name": "Tut",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

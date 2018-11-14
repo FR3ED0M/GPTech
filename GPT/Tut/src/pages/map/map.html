@@ -1,0 +1,32 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.googleapis.com/ https://maps.gstatic.com/ https://mts0.googleapis.com/ 'unsafe-inline' 'unsafe-eval'">
+    
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyC5D9ucUnbAJXy8OFodU7bK_wyJssDnLx4"></script>
+    <script src="/platforms/ios/CordovaLib/cordova.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5D9ucUnbAJXy8OFodU7bK_wyJssDnLx4"></script>
+    
+    
+</head>
+
+
+<ion-header no-border>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-header>
+
+<ion-content class="user-pg">
+      
+    
+    <div class="login-wrap">
+    <div class="login-html">
+        <button ion-button (click)="locate()">Location: </button>
+        <p>{{ data }}</p>
+    </div>
+    </div>
+    
+    
+    
+</ion-content>

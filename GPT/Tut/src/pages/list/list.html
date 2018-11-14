@@ -1,0 +1,65 @@
+<ion-header no-border>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-header>
+
+<ion-content class="user-pg">
+      
+    
+    <div class="login-wrap">
+	<div class="login-html">
+		<div>
+			<div>
+                <div class="group">
+                    <ion-item>
+                        <ion-icon name="person" item-start></ion-icon>
+                        <ion-input placeholder="First Name:"></ion-input>
+                    </ion-item>
+				</div>
+                <div class="group">
+                    <ion-item>
+                        <ion-icon name="person" item-start></ion-icon>
+                        <ion-input placeholder="Last Name:"></ion-input>
+                    </ion-item>
+				</div>
+				<div class="group">
+                    <ion-item>
+                        <ion-icon name="calendar" item-start></ion-icon>
+                        <ion-input placeholder="Date of Birth:"></ion-input>
+                        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+                    </ion-item>
+				</div>
+				<div class="group">
+                    <ion-item>
+                        <ion-icon name="call" item-start></ion-icon>
+                        <ion-input placeholder="Phone Number:" type="number" max="9999999999"></ion-input>
+                    </ion-item>
+				</div>
+                <div class="group">
+                    <ion-item>
+                        <ion-icon name="medkit" item-start></ion-icon>
+                        <ion-textarea class="text-input" placeholder="Medical History:">
+                        </ion-textarea>
+                    </ion-item>
+				</div>
+                <div class="group">
+                    <ion-item>
+                        <ion-icon name="heart" item-start></ion-icon>
+                        
+                        <ion-select placeholder="Blood Type:" [(ngModel)]="gender" modal-title="Blood Type">
+                            <ion-option value="a">A</ion-option>
+                            <ion-option value="b">B</ion-option>
+                            <ion-option value="ab">AB</ion-option>
+                            <ion-option value="o">O</ion-option>
+                        </ion-select>
+                    </ion-item>
+                    </div>
+            </div>
+            
+        
+		</div>
+	</div>
+</div>
+    
+</ion-content>
