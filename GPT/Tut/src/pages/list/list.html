@@ -23,6 +23,17 @@
                         <ion-input placeholder="Last Name:"></ion-input>
                     </ion-item>
 				</div>
+                <div class="group">
+                    <ion-item>
+                        <ion-icon name="heart" item-start></ion-icon>
+                        
+                        <ion-select placeholder="Gender" [(ngModel)]="gender">
+                            <ion-option value="male">Male</ion-option>
+                            <ion-option value="female">Female</ion-option>
+                            <ion-option value="other">Other</ion-option>
+                        </ion-select>
+                    </ion-item>
+                </div>
 				<div class="group">
                     <ion-item>
                         <ion-icon name="calendar" item-start></ion-icon>
@@ -39,10 +50,36 @@
                 <div class="group">
                     <ion-item>
                         <ion-icon name="medkit" item-start></ion-icon>
-                        <ion-textarea class="text-input" placeholder="Medical History:">
+                        <ion-textarea class="text-input" placeholder="Medical Conditions:">
                         </ion-textarea>
                     </ion-item>
 				</div>
+                
+                <div class="group">
+                    <ion-item>
+                        <ion-icon name="medkit" item-start></ion-icon>
+                        <ion-textarea class="text-input" placeholder="Past Surgeries:">
+                        </ion-textarea>
+                    </ion-item>
+				</div>
+                
+                <div class="group">
+                    <ion-item>
+                        <ion-icon name="medkit" item-start></ion-icon>
+                        <ion-textarea class="text-input" placeholder="Medicine Allergies:">
+                        </ion-textarea>
+                    </ion-item>
+				</div>
+                
+                <div class="group">
+                    <ion-item>
+                        <ion-icon name="medkit" item-start></ion-icon>
+                        <ion-textarea class="text-input" placeholder="Non-Medicine Allergies:">
+                        </ion-textarea>
+                    </ion-item>
+				</div>
+                
+                
                 <div class="group">
                     <ion-item>
                         <ion-icon name="heart" item-start></ion-icon>
@@ -54,7 +91,7 @@
                             <ion-option value="o">O</ion-option>
                         </ion-select>
                     </ion-item>
-                    </div>
+                </div>
             </div>
             
         
