@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { NavController } from 'ionic-angular';
-
 import { Geolocation } from '@ionic-native/geolocation';
 import { Component, ViewChild, ElementRef } from '@angular/core';
 
@@ -27,7 +24,8 @@ export class MapPage {
     this.geolocation.getCurrentPosition().then((resp) => {
     // resp.coords.latitude
     // resp.coords.longitude
-    this.data = 'Lat: ' + resp.coords.latitude + ' <br>' + 'Lng: ' + resp.coords.longitude
+    this.data = 'Lat: ' + resp.coords.latitude + ' <br>' + 'Lng: ' + resp.coords.longitude;
+    console.log(this.data);
     }).catch((error) => {
     console.log('Error getting location', error);
     });

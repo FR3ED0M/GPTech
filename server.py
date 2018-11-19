@@ -20,6 +20,7 @@ def new_user():
 
 @app.route('/location_retrieve', methods = ['GET'])
 def location():
+    user = request.args.get('user')
     x = request.args.get('longitude')
     y = request.args.get('latitude')
     
