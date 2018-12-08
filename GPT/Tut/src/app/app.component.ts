@@ -1,18 +1,23 @@
-import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Component, Inject, ViewChild } from '@angular/core';
+import { Platform, NavController, NavParams } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { rootRenderNodes } from '@angular/core/src/view';
+import { OnInit } from '@angular/core';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { HelpPage } from '../pages/help/help';
 import { MapPage } from '../pages/map/map';
+import { NgOnChangesFeature } from '@angular/core/src/render3/definition';
+
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  @ViewChild(Nav) nav: Nav;
+  @ViewChild('content') nav: NavController;
 
   rootPage: any = HomePage;
 
@@ -23,10 +28,10 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'Help', component: HelpPage },
-      { title: 'Map', component: MapPage }
+      { title: 'Edit Info', component: ListPage },
+      { title: 'Info', component: HelpPage },
+      { title: 'Map', component: MapPage },
+      { title: 'Logout', component: HomePage }
     ];
 
   }
@@ -46,3 +51,4 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 }
+

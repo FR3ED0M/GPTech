@@ -16,7 +16,8 @@ export class MapPage {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
  
-  data:string = '';
+  lat:string = '';
+  lng:string = '';
   constructor(public navCtrl: NavController,  private geolocation: Geolocation) { }
   
   
@@ -24,11 +25,14 @@ export class MapPage {
     this.geolocation.getCurrentPosition().then((resp) => {
     // resp.coords.latitude
     // resp.coords.longitude
-    this.data = 'Lat: ' + resp.coords.latitude + ' ' + 'Lng: ' + resp.coords.longitude
-    }).catch((error) => {
+    this.lat = 'Lat: ' + resp.coords.latitude,
+    this.lng = 'Lng: ' + resp.coords.longitude}).catch((error) => {
     console.log('Error getting location', error);
-    });
+    }); 
   }
+
+  //function to add marker once clicked (click)="marker"
+  //marker() { }
   
  
 }
