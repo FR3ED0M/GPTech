@@ -21,11 +21,20 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import {GoogleMapComponent} from '../components/google-map/google-map'
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+<<<<<<< HEAD
     HelpPage
+=======
+    ListPage,
+    HelpPage,
+    MapPage,
+    GoogleMapComponent
+>>>>>>> refs/remotes/origin/master
   ],
   
   imports: [
