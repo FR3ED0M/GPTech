@@ -26,11 +26,8 @@
     "@ionic-native/splash-screen": "~4.15.0",
     "@ionic-native/status-bar": "~4.15.0",
     "@ionic/storage": "2.2.0",
-<<<<<<< HEAD
     "angularfire2": "^5.1.1",
-=======
     "@types/google-maps": "^3.2.0",
->>>>>>> refs/remotes/origin/master
     "cordova-android": "^7.1.2",
     "cordova-ios": "4.5.5",
     "cordova-plugin-device": "^2.0.2",
@@ -53,10 +50,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "^3.2.1",
-<<<<<<< HEAD
     "@ionic/lab": "^1.0.15",
-=======
->>>>>>> refs/remotes/origin/master
     "typescript": "~2.6.2"
   },
   "description": "An Ionic project",
