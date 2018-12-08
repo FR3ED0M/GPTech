@@ -50,7 +50,7 @@ export class MapPage {
         icon: image
       }
     )
-
+    
   }
 
   locate(){
@@ -62,9 +62,5 @@ export class MapPage {
     console.log('Error getting location', error);
     }); 
   }
-
-  //function to add marker once clicked (click)="marker"
-  //marker() { }
-  
  
 }
