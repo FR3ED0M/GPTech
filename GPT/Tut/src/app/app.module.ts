@@ -14,13 +14,16 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import {GoogleMapComponent} from '../components/google-map/google-map'
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
     HelpPage,
-    MapPage
+    MapPage,
+    GoogleMapComponent
   ],
   
   imports: [
