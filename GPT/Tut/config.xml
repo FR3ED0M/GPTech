@@ -89,9 +89,6 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
-<<<<<<< HEAD
     <plugin name="cordova-plugin-email-composer" spec="0.8.15" />
-=======
     <engine name="ios" spec="4.5.5" />
->>>>>>> refs/remotes/origin/master
 </widget>

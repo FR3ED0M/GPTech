@@ -4,12 +4,9 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://maps.googleapis.com/ https://maps.gstatic.com/ https://mts0.googleapis.com/ 'unsafe-inline' 'unsafe-eval'">
     
     <script src="/platforms/ios/CordovaLib/cordova.js"></script>
-<<<<<<< HEAD
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5D9ucUnbAJXy8OFodU7bK_wyJssDnLx4"></script>
-=======
     
     
->>>>>>> refs/remotes/origin/master
 </head>
 
 
@@ -22,17 +19,16 @@
 
 <ion-content>
       
-    <!--
+    
     <div class="login-wrap">
     <div class="login-html">
+        <div #map id="map"></div>
         <button ion-button (click)="locate()">My Location: </button>
         <button ion-button >SOS</button>
         <p>{{ lat }}</p>
         <p>{{ lng }}</p>
     </div>
     </div>
-    -->
-    <google-map></google-map>
     
     
 </ion-content>

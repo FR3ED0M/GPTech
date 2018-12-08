@@ -27,14 +27,8 @@ import {GoogleMapComponent} from '../components/google-map/google-map'
   declarations: [
     MyApp,
     HomePage,
-<<<<<<< HEAD
-    HelpPage
-=======
-    ListPage,
     HelpPage,
-    MapPage,
     GoogleMapComponent
->>>>>>> refs/remotes/origin/master
   ],
   
   imports: [
