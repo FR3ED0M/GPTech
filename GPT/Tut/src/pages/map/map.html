@@ -24,7 +24,8 @@
     <div class="login-html">
         <div #map id="map"></div>
         <button ion-button (click)="locate()">My Location: </button>
-        <button ion-button >SOS</button>
+        <button ion-button (click)="profile()">Profile</button>
+        <button color="danger" ion-button>SOS</button>
         <p>{{ lat }}</p>
         <p>{{ lng }}</p>
     </div>

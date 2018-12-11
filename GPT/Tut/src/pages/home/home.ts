@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { NavController } from 'ionic-angular';
+import { MapPage } from '../map/map';
+import { ListPage } from '../list/list';
 
 
 @Component({
@@ -18,13 +20,13 @@ export class HomePage {
   register(email, password) {
     this.angularFireAuth.auth.createUserWithEmailAndPassword(email, password).then((res) => 
     {
-      this.navCtrl.setRoot('ListPage');
+      this.navCtrl.setRoot(ListPage);
     });
   }
 
   login(email, password) {
     this.angularFireAuth.auth.signInWithEmailAndPassword(email, password).then((user) => {
-      this.navCtrl.setRoot('MapPage', (email));
+      this.navCtrl.setRoot(MapPage, (email));
     })
   }
 }

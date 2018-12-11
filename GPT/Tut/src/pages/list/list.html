@@ -84,7 +84,7 @@
                     <ion-item>
                         <ion-icon name="heart" item-start></ion-icon>
                         
-                        <ion-select placeholder="Blood Type:" [(ngModel)]="gender" modal-title="Blood Type">
+                        <ion-select placeholder="Blood Type:" [(ngModel)]="bloodType" modal-title="Blood Type">
                             <ion-option value="a">A</ion-option>
                             <ion-option value="b">B</ion-option>
                             <ion-option value="ab">AB</ion-option>
@@ -95,7 +95,7 @@
             </div>
             
             <button ion-button>Update</button>
-            <button ion-button (click)='gotoMapPage()'>Search Map</button>
+            <button ion-button (click)='gotoMapPage()'>Map</button>
 
 		</div>
 	</div>

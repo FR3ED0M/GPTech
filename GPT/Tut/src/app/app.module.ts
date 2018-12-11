@@ -27,7 +27,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    HelpPage
+    HelpPage,
+    ListPage,
+    MapPage
   ],
   
   imports: [
@@ -42,7 +44,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    HelpPage
+    HelpPage,
+    ListPage,
+    MapPage
   ],
   
   providers: [

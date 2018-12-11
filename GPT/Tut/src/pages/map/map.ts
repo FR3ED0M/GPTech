@@ -1,11 +1,9 @@
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { ListPage } from '../list/list';
 
 
-
-
-@IonicPage()
 @Component({
   selector: 'page-map',
   templateUrl: 'map.html',
@@ -20,9 +18,7 @@ export class MapPage {
   lng:string = '';
   constructor(public navCtrl: NavController,  private geolocation: Geolocation) { }
   
-  ngOnInit(){
-    this.initMap();
-  }
+  
   
   initMap(){
 
@@ -61,6 +57,10 @@ export class MapPage {
     this.lng = 'Lng: ' + resp.coords.longitude}).catch((error) => {
     console.log('Error getting location', error);
     }); 
+  }
+
+  profile(){
+    this.navCtrl.setRoot(ListPage);
   }
  
 }

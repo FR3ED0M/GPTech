@@ -4,7 +4,7 @@ import { MapPage } from './map';
 
 @NgModule({
   declarations: [
-    MapPage
+    MapPage,
   ],
   imports: [
     IonicPageModule.forChild(MapPage),

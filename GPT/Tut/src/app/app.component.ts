@@ -23,16 +23,13 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private angularFireAuth: AngularFireAuth) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Edit Info', component: ListPage },
-      { title: 'Info', component: HelpPage },
-      { title: 'Map', component: MapPage },
-      { title: 'Logout', component: HomePage }
-    ];
+    // this.pages = [
+    //   { title: 'Logout', component: HomePage }
+    // ];
 
   }
 
@@ -45,10 +42,9 @@ export class MyApp {
     });
   }
 
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+  Logout() {
+    this.angularFireAuth.auth.signOut;
+    this.nav.setRoot(HomePage);
   }
 }
 
