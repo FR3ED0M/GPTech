@@ -4,6 +4,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { ListPage } from '../list/list';
 
 
+@IonicPage()
 @Component({
   selector: 'page-map',
   templateUrl: 'map.html',
@@ -18,35 +19,29 @@ export class MapPage {
   lng:string = '';
   constructor(public navCtrl: NavController,  private geolocation: Geolocation) { }
   
-  
+  ngOnInit(){
+    this.initMap();
+  }
   
   initMap(){
-
-    let coords = new google.maps.LatLng(25.7614036,-80.7751465);
     var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
 
+    let coords = new google.maps.LatLng(26.369259,-80.095845);
     let mapOptions: google.maps.MapOptions = {
       center: coords,
-      zoom: 9,
+      zoom: 14,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
 
     this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions)
 
-    let marker: google.maps.Marker = new google.maps.Marker({
-      map: this.map,
-      position: coords
-    })
-
     let marker_1 = new google.maps.Marker(
       {
-        position: {lat:26.037161, lng:-80.981494}, 
+        position: {lat:26.378042, lng:-80.097306}, 
         map: this.map,
-        title: 'someone',
+        title: 'Ranger Station',
         icon: image
-      }
-    )
-    
+      })
   }
 
   locate(){
@@ -62,5 +57,13 @@ export class MapPage {
   profile(){
     this.navCtrl.setRoot(ListPage);
   }
- 
+
+  SOS(){
+    let coords = new google.maps.LatLng(26.373543,-80.101061);
+    
+    let marker: google.maps.Marker = new google.maps.Marker({
+      map: this.map,
+      position: coords
+    })
+  }
 }

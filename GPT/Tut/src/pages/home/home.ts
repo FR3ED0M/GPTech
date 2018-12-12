@@ -10,6 +10,7 @@ import { ListPage } from '../list/list';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
