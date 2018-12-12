@@ -29,7 +29,7 @@ http://lamp.cse.fau.edu/~lgarcia2013/gpt/
 # The Concept
 <p>Idea comes from technology used in low-wing and high-wing aircraft when a sudden drop in altitude, or crash occurs.</p>
   <ul>
-    <l1>A mobile black box with a distress signal that links to first responders.</li>
+    <li>A mobile black box with a distress signal that links to first responders.</li>
     <li>A direct connection to emergency services.</li>
     <li>Emergency services can then pick up the link and come to the aid of the user.</li>
   </ul>
